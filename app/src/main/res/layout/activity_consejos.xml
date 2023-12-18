@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Consejos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Banner de fondo -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/banner1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ban_2"
+                    tools:ignore="ImageContrastCheck" />
+                <!-- Figura arriba de la imagen -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/sobrebanner2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="75dp"
+                    android:text="@string/consejos"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="@color/white"
+                    android:shadowColor="#D7000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    tools:ignore="VisualLintOverlap" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/opensans_light"
+                    android:gravity="center"
+                    android:shadowColor="#D7000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="@string/consejos_y_datos_pr_cticos"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <ImageButton
+                    android:id="@+id/BotonVolver"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="#00D108"
+                    android:elevation="8dp"
+                    android:contentDescription="@string/boton_regresar"
+                    android:src="@drawable/button_regresar"
+                    tools:ignore="ImageContrastCheck" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_bold"
+                android:padding="22dp"
+                android:text="@string/recuerda_que_la_reforestaci_n_es_un"
+                android:textAlignment="center"
+                android:textColor="#35B600"
+                tools:ignore="TextContrastCheck" />
+
+            <!--Cards para navegación-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable1"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/registro_de_plantaci_n"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/estad_sticas"
+                            android:textAlignment="center"
+                            android:textColor="#757575"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable4"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/recursos"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/image_view"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/imagen"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/consejo1"
+                            tools:ignore="ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_view"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/selecci_n_de_especies_nativas"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="#36455A"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opta_por_plantar_especies_nativas_de_la_regi_n_estas_plantas_est_n_adaptadas_al_clima_suelo_y_condiciones_locales_lo_que_aumenta_las_posibilidades_de_supervivencia_y_el_xito_a_largo_plazo_adem_s_las_especies_nativas_son_fundamentales_para_mantener_el_equilibrio_ecol_gico_local"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@color/black"
+                        android:layout_toEndOf="@id/image_view"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="20dp"
+                        tools:ignore="VisualLintLongText" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/image_view2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/imagen"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/consejo2"
+                            tools:ignore="ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/image_view2"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/opensans_bold"
+                        android:text="@string/preparaci_n_del_suelo"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="#36455A"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/antes_de_plantar_aseg_rate_de_preparar_adecuadamente_el_suelo_elimina_hierbas_no_deseadas_piedras_y_otros_obst_culos_puedes_enriquecer_el_suelo_con_materia_org_nica_para_mejorar_su_fertilidad_esto_proporcionar_a_las_nuevas_plantas_un_entorno_propicio_para_su_crecimiento"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@color/black"
+                        android:layout_toEndOf="@id/image_view2"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="20dp"
+                        tools:ignore="VisualLintLongText" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/image_view3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/imagen"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/consejo3"
+                            tools:ignore="ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mantenimiento_regular"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="#36455A"
+                        android:layout_below="@id/image_view3"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mant_n_un_calendario_regular_de_poda_para_promover_el_crecimiento_saludable_eliminar_ramas_da_adas_y_controlar_la_forma_de_los_rboles_favoreciendo_as_la_sostenibilidad_y_la_biodiversidad_en_el_rea_reforestada"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@color/black"
+                        android:layout_toEndOf="@id/image_view3"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="8dp"
+                        tools:ignore="VisualLintLongText" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/image_view4"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/imagen"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/consejo4"
+                            tools:ignore="ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/participaci_n_comunitaria"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="#36455A"
+                        android:layout_below="@id/image_view4"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/involucra_a_la_comunidad_local_en_el_proceso_de_reforestaci_n_la_participaci_n_activa_de_los_residentes_locales_no_solo_crea_un_sentido_de_pertenencia_sino_que_tambi_n_garantiza_el_cuidado_continuo_de_las_reas_reforestadas_organiza_eventos_talleres_educativos_y_actividades_que_fomenten_la_conexi_n_de_la_comunidad_con_el_entorno"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@color/black"
+                        android:layout_toEndOf="@id/image_view4"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="15dp"
+                        tools:ignore="VisualLintLongText" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/image_view5"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/imagen"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/consejo5"
+                            tools:ignore="ImageContrastCheck" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/monitoreo_y_evaluaci_n"
+                        android:fontFamily="@font/opensans_bold"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="#36455A"
+                        android:layout_below="@id/image_view5"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="8dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/establece_un_sistema_de_monitoreo_para_evaluar_el_progreso_de_tu_proyecto_de_reforestaci_n_realiza_evaluaciones_regulares_para_determinar_el_xito_de_la_plantaci_n_identificar_posibles_problemas_y_ajustar_tus_estrategias_seg_n_sea_necesario_el_monitoreo_a_largo_plazo_te_permitir_medir_el_impacto_ambiental_positivo_de_tu_proyecto"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        android:textColor="@color/black"
+                        android:layout_toEndOf="@id/image_view5"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="15dp"
+                        tools:ignore="VisualLintLongText" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

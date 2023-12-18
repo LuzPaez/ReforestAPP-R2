@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroPlantacion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Banner de fondo -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/banner1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ban_2"
+                    tools:ignore="ImageContrastCheck" />
+                <!-- Figura arriba de la imagen -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/sobrebanner2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="75dp"
+                    android:text="@string/registro_de_plantaci_n"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:shadowColor="#D7000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    tools:ignore="VisualLintOverlap" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/opensans_light"
+                    android:gravity="center"
+                    android:shadowColor="#D7000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="@string/actividad_de_plantaci_n"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+                <ImageButton
+                    android:id="@+id/BotonVolver"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="#00D108"
+                    android:elevation="8dp"
+                    android:contentDescription="@string/boton_regresar"
+                    android:src="@drawable/button_regresar"
+                    tools:ignore="ImageContrastCheck" />
+            </FrameLayout>
+            <!--Fin del banner-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <!--Cards para navegación-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/estad_sticas"
+                            android:textAlignment="center"
+                            android:textColor="#757575"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable3"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/consejos"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable4"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/recursos"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!--contenido de registro-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <TextView
+                android:id="@+id/txtZona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/localizaci_n_nombre_de_la_zona"
+                android:fontFamily="@font/opensans_bold"
+                android:paddingStart="25sp"
+                android:paddingEnd="25sp"/>
+
+            <EditText
+                android:id="@+id/Edtext_Zona"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:autofillHints="description"
+                android:backgroundTint="#00AA64"
+                android:ems="10"
+                android:hint="@string/ingrese_el_nombre_de_la_zona"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtDepartamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/departamento"
+                android:fontFamily="@font/opensans_bold"
+                android:paddingStart="25sp"
+                android:paddingEnd="25dp"/>
+
+
+            <Spinner
+                android:id="@+id/Spin_Departamento"
+                android:layout_width="380dp"
+                android:layout_gravity="center"
+                android:layout_height="50sp"
+                android:backgroundTint="@color/black"
+                android:layout_margin="10sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_de_la_especie_rbol_planta"
+                android:paddingStart="25sp"
+                android:paddingEnd="25sp"
+                android:fontFamily="@font/opensans_bold"/>
+
+
+            <EditText
+                android:id="@+id/Edtext_Especie"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:autofillHints="description"
+                android:ems="10"
+                android:hint="@string/ingrese_el_nombre_de_la_especie_rbol_planta"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:backgroundTint="#00AA64"
+                tools:ignore="TextContrastCheck" />
+
+            <!--Elementos horizontales-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="6dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="170sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/precio_especie"
+                        android:paddingStart="25sp"
+                        android:paddingEnd="25dp"
+                        android:fontFamily="@font/opensans_bold"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/Edtext_PrecioEsp"
+                        android:layout_width="170sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20sp"
+                        android:backgroundTint="#00AA64"
+                        android:ems="10"
+                        android:hint="@string/_0"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColorHint="#2E7D32"
+                        android:textSize="14sp"
+                        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
+                        android:importantForAutofill="no" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cantidad_sembrada"
+                        android:fontFamily="@font/opensans_bold"
+                        android:paddingStart="25sp"
+                        android:paddingEnd="5sp"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/Edtext_CantidadSembrada"
+                        android:layout_width="170sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20sp"
+                        android:backgroundTint="#00AA64"
+                        android:ems="10"
+                        android:hint="@string/_0"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColorHint="#2E7D32"
+                        android:textSize="14sp"
+                        tools:ignore="TextContrastCheck"
+                        android:importantForAutofill="no" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mes_de_siembra"
+                        android:paddingStart="25sp"
+                        android:paddingEnd="25sp"
+                        android:fontFamily="@font/opensans_bold"
+
+                        />
+
+                    <Spinner
+                        android:id="@+id/Spin_Meses"
+                        android:layout_width="170sp"
+                        android:layout_height="48sp"
+                        android:backgroundTint="#00AA64"
+                        android:layout_margin="17sp"
+                        android:padding="10dp"
+                        />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rea_de_plantaci_n_m2"
+                        android:paddingStart="25sp"
+                        android:paddingEnd="0sp"
+                        android:fontFamily="@font/opensans_bold"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/Edtext_Area"
+                        android:layout_width="170sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20sp"
+                        android:backgroundTint="#00AA64"
+                        android:ems="10"
+                        android:hint="@string/_0"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColorHint="#2E7D32"
+                        android:textSize="14sp"
+                        tools:ignore="TextContrastCheck"
+                        android:importantForAutofill="no" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <!-- Entradas de descripciones-->
+
+            <TextView
+                android:id="@+id/txtCondicionesSitio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/condiciones_del_sitio"
+                android:paddingStart="25sp"
+                android:paddingEnd="25sp"
+                android:fontFamily="@font/opensans_bold"
+                />
+
+            <EditText
+                android:id="@+id/Edtext_C_sitio"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:backgroundTint="#00AA64"
+                android:ems="10"
+                android:hint="@string/ingrese_las_condiciones_del_sitio"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck" />
+            <TextView
+                android:id="@+id/txtCondicionesSiembra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/condiciones_de_la_siembra"
+                android:paddingStart="25sp"
+                android:paddingEnd="25sp"
+                android:fontFamily="@font/opensans_bold"
+                />
+
+            <EditText
+                android:id="@+id/Edtext_C_siembra"
+                android:layout_width="370dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:backgroundTint="#00AA64"
+                android:ems="10"
+                android:hint="@string/ingrese_las_condiciones_para_la_siembra"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/txtClima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/condiciones_climaticas"
+                android:paddingStart="25sp"
+                android:paddingEnd="25sp"
+                android:fontFamily="@font/opensans_bold"
+                />
+
+            <EditText
+                android:id="@+id/Edtext_C_clima"
+                android:layout_width="370dp"
+                android:layout_height="48sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:backgroundTint="#00AA64"
+                android:ems="10"
+                android:hint="@string/ingrese_las_condiciones_climaticas"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck" />
+
+            <!--Boton de guardar -->
+
+            <Button
+                android:id="@+id/btn_GuardarRegistro"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="@string/guardar_registro"
+                android:layout_gravity="center"
+                android:layout_margin="18dp"
+                android:backgroundTint="#00C814"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:cornerRadius="10sp"
+                tools:ignore="TextContrastCheck"/>
+
+            <!--TABLA-->
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation= "horizontal" >
+
+                <TableLayout
+                    android:id="@+id/Tabla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:layout_margin="20dp"
+                    android:paddingEnd="20dp">
+
+                    <TableRow
+                        android:background="#009707"
+                        >
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="@string/zona"
+                            android:textColor="@color/white"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="@string/departamento"
+                            android:textColor="@color/white"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="@string/especie"
+                            android:textColor="@color/white"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="@string/precio_unitario"
+                            android:textColor="@color/white"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="@string/cantidad"
+                            android:textColor="@color/white"
+                            tools:ignore="TextContrastCheck" />
+                        <TextView
+                            android:text="@string/mes"
+                            android:padding="10sp"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:text="@string/area"
+                            android:padding="10sp"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:text="@string/cond_sitio"
+                            android:padding="10sp"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:text="@string/cond_siembra"
+                            android:padding="10sp"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:text="@string/cond_clima"
+                            android:padding="10sp"
+                            android:textColor="@color/white"
+                            />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="@string/bosque_altoandino"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="@string/cundinamarca"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="@string/pino_colombiano"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="$80.500"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="50"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Marzo"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="800 m²"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Sombreado"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Bueno"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Fresco"
+                            android:textColor="@color/black"
+                            />
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Amazonía"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Caquetá"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Manglar Negro"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="$15,000"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="75"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Junio"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="1200 m²"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Húmedo"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Moderado"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Cálido"
+                            android:textColor="@color/black"
+                            />
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Orinoquía"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Meta"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Ceiba Blanca"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="$12,500"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="60"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Abril"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="900 m²"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Soleado"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Excelente"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Templado"
+                            android:textColor="@color/black"
+                            />
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Caribe"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Magdalena"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Palma de Cera"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="$18,750"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="45"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Mayo"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="1100 m²"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Parcialmente nublado"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Bueno"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Cálido"
+                            android:textColor="@color/black"
+                            />
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Pacífico"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Chocó"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Caimo Blanco"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="$20,200"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="30"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Julio"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="750 m²"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Lluvioso"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Óptimo"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:padding="10sp"
+                            android:text="Cálido"
+                            android:textColor="@color/black"
+                            />
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

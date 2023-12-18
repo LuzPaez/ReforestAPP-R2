@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="300dp"
+    tools:context=".Opciones">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/logo_imagen"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo_img_may"
+                tools:ignore="ImageContrastCheck" />
+
+
+            <Button
+                android:id="@+id/buttonRegistroPlanta"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#00C814"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:cornerRadius="10sp"
+                tools:ignore="TextContrastCheck"
+                android:text="@string/ir_a_registro_de_plantaci_n" />
+            <Button
+                android:id="@+id/buttonEstadisticas"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#00C814"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:cornerRadius="10sp"
+                tools:ignore="TextContrastCheck"
+                android:text="@string/ir_a_estadisticas" />
+            <Button
+                android:id="@+id/buttonConsejos"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#00C814"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:cornerRadius="10sp"
+                tools:ignore="TextContrastCheck"
+                android:text="@string/ir_a_consejos" />
+            <Button
+                android:id="@+id/buttonRecursos"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#00C814"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:cornerRadius="10sp"
+                tools:ignore="TextContrastCheck"
+                android:text="@string/ir_a_recursos" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

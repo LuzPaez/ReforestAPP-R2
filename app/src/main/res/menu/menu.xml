@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_opciones"
+        android:icon="@drawable/hoja"
+        android:title="Opciones" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/logo_img_may"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_config"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Configuración" />
+</menu>

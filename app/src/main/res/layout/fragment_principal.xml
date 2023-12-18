@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Banner-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Banner de fondo -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/banner1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ban_1"
+                    tools:ignore="ImageContrastCheck" />
+
+                <ImageButton
+                    android:id="@+id/BotonSalir"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="#008605"
+                    android:fontFamily="@font/opensans_bold"
+                    android:src="@drawable/icon_salir"
+                    app:cornerRadius="10sp"
+                    android:elevation="8dp"
+                    android:contentDescription="@string/boton_salir"
+                    />
+
+                <!-- Figura arriba de la imagen -->
+                <RelativeLayout
+                    android:id="@+id/Anim_desplazamiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="275dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="start"
+                    android:background="@drawable/sobrebanner"/>
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="35dp"
+                    android:text="@string/bienvenido"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textColor="@color/white"
+                    android:shadowColor="#D7000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="70dp"
+                    android:fontFamily="@font/opensans_light"
+                    android:gravity="center"
+                    android:shadowColor="#D7000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="@string/te_invitamos_a_ser_parte_de_la_soluci_n"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                </RelativeLayout>
+            </FrameLayout>
+            <!--Banner2-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-5dp"
+                    android:background="@drawable/cita"
+                    android:padding="13dp"
+                    android:text="@string/el_hombre_que_planta_rboles_john_muir"
+                    android:textColor="#FF009E07"
+                    android:textSize="14sp"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/imagenPequeñalogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:contentDescription="@string/logo_imagen"
+                    android:translationX="320dp"
+                    android:translationY="40dp"
+                    app:srcCompat="@drawable/logo_img_may"
+                    tools:ignore="ImageContrastCheck" />
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <!--Cards para navegación-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable1"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/registro_de_plantaci_n"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/estad_sticas"
+                            android:textAlignment="center"
+                            android:textColor="#757575"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable3"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/consejos"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable4"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/recursos"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <!--Primer Subtitulo-->
+            <TextView
+                android:id="@+id/txtSubTituloDatosinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/datos_informativos"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="#36455A"/>
+
+            <!-- Carrusel Pendiente de java-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Carrusel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imagenCarrusel"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arbol1"
+                        android:contentDescription="@string/carrusel" />
+
+                    <TextView
+                        android:id="@+id/textoCarruselTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imagenCarrusel"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:background="#008705"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/textoCarruselDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textoCarruselTitulo"
+                        android:padding="8dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:background="#D6FBD7"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <!--Segundo Subtitulo-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/acciones_que_hacen_la_diferencia"
+                android:textSize="16sp"
+                android:fontFamily="@font/opensans_bold"
+                android:textColor="#36455A"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <!--Horizontal Scroll de acciones-->
+            <HorizontalScrollView
+                android:id="@+id/HSV_acciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#00AC08"
+                        android:layout_marginStart="10dp">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/reducir_el_consumo_de_papel"
+                                android:fontFamily="@font/opensans_bold"
+                                android:textColor="#FFFFFF"
+                                android:textSize="17sp" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="12dp"
+                                android:background="#D3D3D3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/reciclar_papel_y_utilizar_papel_reciclado"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                tools:ignore="TextContrastCheck" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#00AC08"
+                        android:layout_marginStart="10dp">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/participar_en_programas_de_reforestaci_n"
+                                android:fontFamily="@font/opensans_bold"
+                                android:textColor="#FFFFFF"
+                                android:textSize="17sp" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="12dp"
+                                android:background="#D3D3D3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/colaborar_con_organizaciones_locales_que_realicen_proyectos_de_reforestaci_n"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                tools:ignore="TextSizeCheck,TextContrastCheck" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#00AC08"
+                        android:layout_marginStart="10dp">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ser_consciente_del_consumo_de_energ_a"
+                                android:fontFamily="@font/opensans_bold"
+                                android:textColor="#FFFFFF"
+                                android:textSize="17sp" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="12dp"
+                                android:background="#D3D3D3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/reducir_el_consumo_de_energ_a_en_el_hogar_para_disminuir_la_presi_n_sobre_reas_forestales"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                tools:ignore="TextContrastCheck" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#00AC08"
+                        android:layout_marginStart="10dp">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/apoyar_a_empresas_responsables"
+                                android:fontFamily="@font/opensans_bold"
+                                android:textColor="#FFFFFF"
+                                android:textSize="17sp" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="12dp"
+                                android:background="#D3D3D3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:text="@string/informarte_sobre_las_pol_ticas_ambientales_de_las_marcas_antes_de_realizar_compras"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#00AC08"
+                        android:layout_marginStart="10dp">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/educaci_n_y_concienciaci_n"
+                                android:fontFamily="@font/opensans_bold"
+                                android:textColor="#FFFFFF"
+                                android:textSize="17sp" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="35dp"
+                                android:background="#D3D3D3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:text="@string/aprender_sobre_la_importancia_de_los_bosques_y_los_impactos_de_la_deforestaci_n"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#00AC08"
+                        android:layout_marginStart="10dp">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/voluntariado_ambiental"
+                                android:fontFamily="@font/opensans_bold"
+                                android:textColor="#FFFFFF"
+                                android:textSize="17sp" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="35dp"
+                                android:background="#D3D3D3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:text="@string/participar_en_programas_de_voluntariado_que_se_centren_en_la_conservaci_n_de_bosques_y_la_educaci_n_ambiental"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="#00AC08"
+                        android:layout_marginStart="10dp">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/apoyar_iniciativas_locales"
+                                android:fontFamily="@font/opensans_bold"
+                                android:textColor="#FFFFFF"
+                                android:textSize="17sp" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="12dp"
+                                android:background="#D3D3D3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:text="@string/unirte_o_apoyar_grupos_locales_que_trabajen_para_proteger_y_conservar_los_bosques_en_tu_rea"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <TextView
+                android:id="@+id/mensajeFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/cita"
+                android:padding="30dp"
+                android:text="@string/recuerda_que_cada_peque_a_acci_n_cuenta_y_al_adoptar_h_bitos_m_s_sostenibles_en_tu_vida_diaria_puedes_contribuir_significativamente_a_la_preservaci_n_de_los_bosques_y_la_reducci_n_de_la_deforestaci_n"
+                android:textColor="#009E07"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck,TextContrastCheck,VisualLintLongText" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

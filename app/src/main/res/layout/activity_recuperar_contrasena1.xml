@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecuperarContrasena1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_img_may"
+            android:contentDescription="@string/logo_imagen" />
+
+        <ImageView
+            android:id="@+id/imgLogoText"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_txt"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/texto_logo" />
+
+        <TextView
+            android:id="@+id/txtRecuperarCont"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/recuperarcontrase_a"
+            android:textColor="#1A7A5F"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/para_restablecer_tu_contrase_a"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_light"
+            android:textSize="13sp"
+            tools:ignore="VisualLintLongText" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="60sp"
+            android:paddingEnd="60sp"
+            android:text="@string/escribe_tu_correo_electr_nico"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_light"
+            />
+
+        <EditText
+            android:id="@+id/EdText_Correo"
+            android:layout_width="300sp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:autofillHints="emailAddress"
+            android:backgroundTint="#00AA64"
+            android:ems="10"
+            android:fontFamily="@font/opensans_light"
+            android:hint="@string/nombre_correo"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8sp"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_EnviarCod"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="18dp"
+            android:backgroundTint="#00C814"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/enviar_c_digo"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:cornerRadius="10sp"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Link_IrInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="center"
+                android:text="@string/ir_al_inicio_de_sesi_n"
+                android:textColor="#2D9102"
+                android:textColorLink="#7FF066"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+
+
+            <Space
+                android:layout_width="8sp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/Link_CrearCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="center"
+                android:text="@string/crear_una_cuenta"
+                android:textColor="#34B200"
+                android:textColorLink="#7FF066"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

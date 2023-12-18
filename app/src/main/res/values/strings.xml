@@ -1,0 +1,220 @@
+<resources>
+    <string name="app_name">ReforestAPP_R2</string>
+    <string name="logo_imagen">logo imagen</string>
+    <string name="texto_logo">texto logo</string>
+    <!--login-->
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="bienvenido">¡Bienvenido!</string>
+    <string name="ingresa_tu_correo_electr_nico">Ingresa tu correo electrónico</string>
+    <string name="nombre_correo_com">nombre@correo.com</string>
+    <string name="ingresa_tu_contrase_a">Ingresa tu contraseña</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="olvidaste_tu_contrase_a">¿Olvidaste tu contraseña?</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="no_tienes_cuenta">¿No tienes cuenta?</string>
+    <string name="crear_una_cuenta">Crear una cuenta</string>
+    <!--registro-->
+    <string name="registro_de_usuario">Registro de usuario</string>
+    <string name="para_acceder_a_la_aplicaci_n_por_favor_registre_los_siguientes_datos">Para acceder a la aplicación, por favor, registre los siguientes datos.</string>
+    <string name="ingrese_una_direcci_n_de_correo_electr_nico">Ingrese una dirección de correo electrónico</string>
+    <string name="nombre_correo">nombre@correo.com</string>
+    <string name="ingrese_un_nombre_de_usuario">Ingrese un nombre de usuario</string>
+    <string name="nombre_apellido_o_alias">Nombre, Apellido o Alias</string>
+    <string name="ingrese_una_contrase_a_segura">Ingrese una contraseña segura</string>
+    <string name="terminos_app">Al marcar esta casilla, acepta las condiciones de uso y la política de privacidad de la app.</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="ir_al_inicio_de_sesi_n">Ir al Inicio de Sesión</string>
+    <!--recuperar contraseña1-->
+    <string name="recuperarcontrase_a">Recuperar Contraseña</string>
+    <string name="para_restablecer_tu_contrase_a">Necesitamos que ingreses la dirección de correo con la que te registraste y te enviaremos un código para restablecer tu contraseña.</string>
+    <string name="escribe_tu_correo_electr_nico">Escribe tu correo electrónico</string>
+    <string name="enviar_c_digo">Enviar código</string>
+    <!--recuperar contraseña2-->
+    <string name="ingresa_el_c_digo_que_te_enviamos">Ingresa el código que te enviamos</string>
+    <string name="c_digo_de_4_d_gitos">Código de 4 dígitos</string>
+    <string name="no_te_lleg_un_c_digo">¿No te llegó un código?</string>
+    <string name="reenviar_c_digo">Reenviar código</string>
+    <string name="confirmar">Confirmar</string>
+    <!--recuperar contraseña3-->
+    <string name="verificado">¡Verificado!</string>
+    <string name="es_hora_de_crear_una_nueva_contrase_a">Es hora de crear una nueva contraseña. Para proteger tu cuenta, te sugerimos que elijas una contraseña que tenga al menos ocho caracteres, incluyendo mayúsculas, minúsculas, números y símbolos.</string>
+    <string name="ingresa_tu_nueva_contrase_a">Ingresa tu nueva contraseña</string>
+    <string name="nueva_contrase_a">Nueva contraseña</string>
+    <string name="confirmar_tu_contrase_a">Confirma tu contraseña</string>
+    <string name="confirmar_contrase_a">Confirmar contraseña</string>
+    <!--Pagina principal de la app-->
+    <string name="banner1">banner 1</string>
+    <string name="te_invitamos_a_ser_parte_de_la_soluci_n">Te invitamos a ser parte de la solución al cambio climático</string>
+    <string name="el_hombre_que_planta_rboles_john_muir">El hombre que planta árboles, que cultiva la amistad de los pájaros, que se alegra de la belleza del mundo, vive en la eternidad.- John Muir</string>
+    <string name="hoja">Hoja</string>
+    <string name="registro_de_plantaci_n">REGISTRO DE PLANTACIÓN</string>
+    <string name="estad_sticas">ESTADÍSTICAS</string>
+    <string name="consejos">CONSEJOS</string>
+    <string name="recursos">RECURSOS</string>
+    <string name="datos_informativos">DATOS INFORMATIVOS</string>
+    <!--Consejos-->
+    <string name="consejos_y_datos_pr_cticos">Consejos y datos prácticos.</string>
+    <string name="boton_regresar">boton regresar</string>
+    <string name="recuerda_que_la_reforestaci_n_es_un">Recuerda que la reforestación es un esfuerzo a largo plazo que requiere planificación y compromiso continuo</string>
+    <string name="imagen">imagen</string>
+    <string name="selecci_n_de_especies_nativas">Selección de Especies Nativas</string>
+    <string name="opta_por_plantar_especies_nativas_de_la_regi_n_estas_plantas_est_n_adaptadas_al_clima_suelo_y_condiciones_locales_lo_que_aumenta_las_posibilidades_de_supervivencia_y_el_xito_a_largo_plazo_adem_s_las_especies_nativas_son_fundamentales_para_mantener_el_equilibrio_ecol_gico_local">Opta por plantar especies nativas de la región. Estas plantas están adaptadas al clima, suelo y condiciones locales, lo que aumenta las posibilidades de supervivencia y el éxito a largo plazo. Además, las especies nativas son fundamentales para mantener el equilibrio ecológico local</string>
+    <string name="preparaci_n_del_suelo">Preparación del Suelo</string>
+    <string name="antes_de_plantar_aseg_rate_de_preparar_adecuadamente_el_suelo_elimina_hierbas_no_deseadas_piedras_y_otros_obst_culos_puedes_enriquecer_el_suelo_con_materia_org_nica_para_mejorar_su_fertilidad_esto_proporcionar_a_las_nuevas_plantas_un_entorno_propicio_para_su_crecimiento">Antes de plantar, asegúrate de preparar adecuadamente el suelo. Elimina hierbas no deseadas, piedras y otros obstáculos. Puedes enriquecer el suelo con materia orgánica para mejorar su fertilidad. Esto proporcionará a las nuevas plantas un entorno propicio para su crecimiento</string>
+    <string name="mantenimiento_regular">Mantenimiento Regular</string>
+    <string name="mant_n_un_calendario_regular_de_poda_para_promover_el_crecimiento_saludable_eliminar_ramas_da_adas_y_controlar_la_forma_de_los_rboles_favoreciendo_as_la_sostenibilidad_y_la_biodiversidad_en_el_rea_reforestada">Mantén un calendario regular de poda para promover el crecimiento saludable, eliminar ramas dañadas y controlar la forma de los árboles, favoreciendo así la sostenibilidad y la biodiversidad en el área reforestada.</string>
+    <string name="participaci_n_comunitaria">Participación Comunitaria</string>
+    <string name="involucra_a_la_comunidad_local_en_el_proceso_de_reforestaci_n_la_participaci_n_activa_de_los_residentes_locales_no_solo_crea_un_sentido_de_pertenencia_sino_que_tambi_n_garantiza_el_cuidado_continuo_de_las_reas_reforestadas_organiza_eventos_talleres_educativos_y_actividades_que_fomenten_la_conexi_n_de_la_comunidad_con_el_entorno">Involucra a la comunidad local en el proceso de reforestación. La participación activa de los residentes locales no solo crea un sentido de pertenencia, sino que también garantiza el cuidado continuo de las áreas reforestadas. Organiza eventos, talleres educativos y actividades que fomenten la conexión de la comunidad con el entorno</string>
+    <string name="monitoreo_y_evaluaci_n">Monitoreo y Evaluación</string>
+    <string name="establece_un_sistema_de_monitoreo_para_evaluar_el_progreso_de_tu_proyecto_de_reforestaci_n_realiza_evaluaciones_regulares_para_determinar_el_xito_de_la_plantaci_n_identificar_posibles_problemas_y_ajustar_tus_estrategias_seg_n_sea_necesario_el_monitoreo_a_largo_plazo_te_permitir_medir_el_impacto_ambiental_positivo_de_tu_proyecto">Establece un sistema de monitoreo para evaluar el progreso de tu proyecto de reforestación. Realiza evaluaciones regulares para determinar el éxito de la plantación, identificar posibles problemas y ajustar tus estrategias según sea necesario. El monitoreo a largo plazo te permitirá medir el impacto ambiental positivo de tu proyecto.</string>
+    <!--Recursos-->
+    <string name="recursos_informativos">recursos informativos</string>
+    <string name="p_ginas_interesantes">Páginas interesantes</string>
+    <string name="ver_mapa_de_reforestaci_n">Ver: Mapa de Reforestación</string>
+    <string name="p_gina1">Página1</string>
+    <string name="educaplay_la_deforestaci_n">Educaplay: La deforestación</string>
+    <string name="p_gina2">Página2</string>
+    <string name="colombia_verde_deforestaci_n_y_cambio_clim_tico">Colombia Verde : Deforestación y cambio climático</string>
+    <string name="p_gina3">Página3</string>
+    <string name="somos_el_cambio_efectos_del_cambio_clim_tico_en_colombia_un_desaf_o_urgente">Somos el cambio: Efectos del cambio climático en Colombia: un desafío urgente</string>
+    <string name="p_gina4">Página4</string>
+    <string name="minambiente_control_a_la_deforestaci_n">MinAmbiente:Control a La Deforestación</string>
+    <string name="p_gina5">Página5</string>
+    <string name="minambiente_se_reduce_y_se_contiene_la_deforestaci_n_en_colombia_durante_los_ltimos_cuatro_a_os">MinAmbiente: Se reduce y se contiene la deforestación en Colombia durante los últimos cuatro años</string>
+    <string name="p_gina6">Página6</string>
+    <string name="naciones_unidas_reforestaci_n_la_manera_m_s_f_cil_de_luchar_contra_el_cambio_clim_tico">Naciones Unidas: Reforestación: La Manera Más Fácil de Luchar Contra el Cambio Climático</string>
+    <string name="mapa_de_deforestaci_n">Mapa de deforestación</string>
+    <!--Estadisticas-->
+    <string name="promedio_estad_stico">Promedio estadístico</string>
+    <string name="localizaci_n_nombre_de_la_zona">Localización - Nombre de la zona</string>
+    <string name="ingrese_el_nombre_de_la_zona">Ingrese el nombre de la zona</string>
+    <string name="nombre_de_la_especie_rbol_planta">Nombre de la especie, árbol, planta</string>
+    <string name="ingrese_el_nombre_de_la_especie_rbol_planta">Ingrese el nombre de la especie, árbol, planta</string>
+    <string name="precio_especie">Precio Especie</string>
+    <string name="_0">0</string>
+    <string name="cantidad_sembrada">Cantidad sembrada</string>
+    <string name="mes_de_siembra">Mes de siembra</string>
+    <string name="rea_de_plantaci_n_m2">Área de plantación m2</string>
+    <string name="total_del_costo_de_siembra">Total del costo de siembra</string>
+    <string name="promedio_del_costo_de_siembra">Promedio del costo de siembra</string>
+    <string name="densidad_de_arboles_sembrados_x_rea">Densidad de arboles sembrados x área</string>
+    <string name="gr_ficas">Gráficas</string>
+    <string name="referencia_global_forest_watch">Referencia: Global Forest Watch</string>
+    <string name="p_rdida_del_bosque_primario_en_colombia">Pérdida del bosque primario en Colombia</string>
+    <string name="p_rdida_cobertura_arb_rea">Pérdida cobertura arbórea</string>
+    <string name="p_rdida_anual_de_cobertura_arb_rea_debido_al_factor_dominante_en_colombia">Pérdida por año de cobertura arbórea debido al factor dominante en colombia</string>
+    <string name="p_rdida_de_cobertura_arb_rea_a_causa_de_los_incendios_en_colombia">Pérdida de cobertura arbórea a causa de los incendios en colombia</string>
+    <!--Pagina principal (agregación2)-->
+    <string name="acciones_que_hacen_la_diferencia">ACCIONES QUE HACEN LA DIFERENCIA</string>
+    <string name="reducir_el_consumo_de_papel">Reducir el Consumo de Papel</string>
+    <string name="reciclar_papel_y_utilizar_papel_reciclado">Reciclar papel y utilizar papel reciclado</string>
+    <string name="participar_en_programas_de_reforestaci_n">Participar en Programas de Reforestación</string>
+    <string name="colaborar_con_organizaciones_locales_que_realicen_proyectos_de_reforestaci_n">Colaborar con organizaciones locales que realicen proyectos de reforestación.</string>
+    <string name="ser_consciente_del_consumo_de_energ_a">Ser Consciente del Consumo de Energía</string>
+    <string name="reducir_el_consumo_de_energ_a_en_el_hogar_para_disminuir_la_presi_n_sobre_reas_forestales">Reducir el consumo de energía en el hogar para disminuir la presión sobre áreas forestales</string>
+    <string name="apoyar_a_empresas_responsables">Apoyar a Empresas Responsables</string>
+    <string name="informarte_sobre_las_pol_ticas_ambientales_de_las_marcas_antes_de_realizar_compras">Informarte sobre las políticas ambientales de las marcas antes de realizar compras.</string>
+    <string name="educaci_n_y_concienciaci_n">Educación y Concienciación</string>
+    <string name="aprender_sobre_la_importancia_de_los_bosques_y_los_impactos_de_la_deforestaci_n">Aprender sobre la importancia de los bosques y los impactos de la deforestación.</string>
+    <string name="participar_en_programas_de_voluntariado_que_se_centren_en_la_conservaci_n_de_bosques_y_la_educaci_n_ambiental">Participar en programas de voluntariado que se centren en la conservación de bosques y la educación ambiental.</string>
+    <string name="voluntariado_ambiental">Voluntariado Ambiental</string>
+    <string name="apoyar_iniciativas_locales">Apoyar Iniciativas Locales</string>
+    <string name="unirte_o_apoyar_grupos_locales_que_trabajen_para_proteger_y_conservar_los_bosques_en_tu_rea">Unirte o apoyar grupos locales que trabajen para proteger y conservar los bosques en tu área</string>
+    <string name="recuerda_que_cada_peque_a_acci_n_cuenta_y_al_adoptar_h_bitos_m_s_sostenibles_en_tu_vida_diaria_puedes_contribuir_significativamente_a_la_preservaci_n_de_los_bosques_y_la_reducci_n_de_la_deforestaci_n">Recuerda que cada pequeña acción cuenta, y al adoptar hábitos más sostenibles en tu vida diaria, puedes contribuir significativamente a la preservación de los bosques y la reducción de la deforestación</string>
+    <!--Registro de plantación-->
+    <string name="actividad_de_plantaci_n">Actividad de plantación</string>
+    <string name="departamento">Departamento</string>
+    <string name="condiciones_del_sitio">Condiciones del sitio</string>
+    <string name="ingrese_las_condiciones_del_sitio">Ingrese las condiciones del sitio</string>
+    <string name="condiciones_de_la_siembra">Condiciones de la siembra</string>
+    <string name="ingrese_las_condiciones_para_la_siembra">Ingrese las condiciones para la siembra</string>
+    <string name="condiciones_climaticas">Condiciones climaticas</string>
+    <string name="ingrese_las_condiciones_climaticas">Ingrese las condiciones climaticas</string>
+    <string name="guardar_registro">Guardar registro</string>
+    <string name="zona">Zona</string>
+    <string name="especie">Especie</string>
+    <string name="precio_unitario">Precio Unitario</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="mes">Mes</string>
+    <string name="area">Area</string>
+    <string name="cond_sitio">Cond.sitio</string>
+    <string name="cond_siembra">Cond.siembra</string>
+    <string name="cond_clima">Cond.clima</string>
+
+
+    <!--String array para las opciones del departamento-->
+    <string-array name="DepartamentoOpciones">
+        <item>Amazonas</item>
+        <item>Antioquia</item>
+        <item>Arauca</item>
+        <item>Atlántico</item>
+        <item>Bolívar</item>
+        <item>Boyacá</item>
+        <item>Caldas</item>
+        <item>Caquetá</item>
+        <item>Casanare</item>
+        <item>Cauca</item>
+        <item>Cesar</item>
+        <item>Chocó</item>
+        <item>Córdoba</item>
+        <item>Cundinamarca</item>
+        <item>Guainía</item>
+        <item>Guaviare</item>
+        <item>Huila</item>
+        <item>La Guajira</item>
+        <item>Magdalena</item>
+        <item>Meta</item>
+        <item>Nariño</item>
+        <item>Norte de Santander</item>
+        <item>Putumayo</item>
+        <item>Quindío</item>
+        <item>Risaralda</item>
+        <item>San Andrés y Providencia</item>
+        <item>Santander</item>
+        <item>Sucre</item>
+        <item>Tolima</item>
+        <item>Valle del Cauca</item>
+        <item>Vaupés</item>
+        <item>Vichada</item>
+    </string-array>
+    <!--String array para las opciones del mes-->
+    <string-array name="MesOpciones">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+    <!--Configuracion-->
+    <string name="aqu_puedes_cambiar_tu_nombre_contrase_a_y_correo_recuerda_guardar_los_cambios">Aquí puedes cambiar tu nombre, contraseña,y correo. Recuerda guardar los cambios</string>
+    <string name="regresar">Regresar</string>
+    <string name="configuraci_n_de_cuenta">Configuración de cuenta</string>
+    <string name="ingrese_una_nueva_direcci_n_de_correo">Ingrese una nueva dirección de correo</string>
+    <string name="ingrese_un_nuevo_nombre_de_usuario">Ingrese un nuevo nombre de usuario</string>
+    <string name="cambiar_contrase_a">Cambiar contraseña</string>
+    <string name="actualizar_datos">Actualizar Datos</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="boton_salir">Boton salir</string>
+    <string name="carrusel">carrusel</string>
+    <string name="ir_a_registro_de_plantaci_n">Ir a: Registro de Plantación</string>
+    <string name="ir_a_estadisticas">Ir a: Estadisticas</string>
+    <string name="ir_a_consejos">Ir a: Consejos</string>
+    <string name="ir_a_recursos">Ir a: Recursos</string>
+
+<!--Registro de Plantacion-->
+    <string name="bosque_altoandino">Bosque Altoandino</string>
+    <string name="cundinamarca">Cundinamarca</string>
+    <string name="pino_colombiano">Pino Colombiano</string>
+
+
+</resources>

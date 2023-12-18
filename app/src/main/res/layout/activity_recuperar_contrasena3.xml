@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecuperarContrasena3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_img_may"
+            android:contentDescription="@string/logo_imagen" />
+
+        <ImageView
+            android:id="@+id/imgLogoText"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_txt"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/texto_logo" />
+        <TextView
+            android:id="@+id/txtRecuperarCont"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/recuperarcontrase_a"
+            android:textColor="#1A7A5F"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <TextView
+            android:id="@+id/txtBienvenido"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:text="@string/verificado"
+            android:textColor="#18AE00"
+            android:textSize="30sp"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/es_hora_de_crear_una_nueva_contrase_a"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_light"
+            android:textSize="13sp"
+            tools:ignore="VisualLintLongText" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="23sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="60sp"
+            android:paddingEnd="60sp"
+            android:text="@string/ingresa_tu_nueva_contrase_a"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_light"
+            />
+
+        <EditText
+            android:id="@+id/EdText_NewContrasena"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:autofillHints="password"
+            android:backgroundTint="#00AA64"
+            android:ems="10"
+            android:fontFamily="@font/opensans_light"
+            android:hint="@string/nueva_contrase_a"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingEnd="8sp"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="60sp"
+            android:paddingEnd="60sp"
+            android:text="@string/confirmar_tu_contrase_a"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_light"
+            />
+
+        <EditText
+            android:id="@+id/EdText_ConfirmContrasena"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:autofillHints="password"
+            android:backgroundTint="#00AA64"
+            android:ems="10"
+            android:fontFamily="@font/opensans_light"
+            android:hint="@string/confirmar_contrase_a"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingEnd="8sp"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_Confirmar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="18dp"
+            android:backgroundTint="#00C814"
+            android:fontFamily="@font/opensans_bold"
+            android:text="@string/confirmar"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            app:cornerRadius="10sp"
+            tools:ignore="TextContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/Link_IrInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opensans_bold"
+            android:gravity="center"
+            android:text="@string/ir_al_inicio_de_sesi_n"
+            android:textColor="#2D9102"
+            android:textColorLink="#7FF066"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recursos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Banner de fondo -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/banner1"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ban_2"
+                    tools:ignore="ImageContrastCheck" />
+                <!-- Figura arriba de la imagen -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/sobrebanner2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginTop="75dp"
+                    android:text="@string/recursos"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/opensans_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:shadowColor="#D7000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    tools:ignore="VisualLintOverlap" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:fontFamily="@font/opensans_light"
+                    android:gravity="center"
+                    android:shadowColor="#D7000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:text="@string/recursos_informativos"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+                <ImageButton
+                    android:id="@+id/BotonVolver"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="#00D108"
+                    android:elevation="8dp"
+                    android:contentDescription="@string/boton_regresar"
+                    android:src="@drawable/button_regresar"
+                    tools:ignore="ImageContrastCheck" />
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <!--Cards para navegación-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:scrollbars="none"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable1"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp"
+                        tools:ignore="TextSizeCheck">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/registro_de_plantaci_n"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable2"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/estad_sticas"
+                            android:textAlignment="center"
+                            android:textColor="#757575"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardNavegable3"
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="6dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:strokeColor="#544CAF50"
+                        app:strokeWidth="1dp">
+
+                        <!-- Icono -->
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:contentDescription="@string/hoja"
+                            android:src="@drawable/hoja"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <!-- Texto -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40dp"
+                            android:fontFamily="@font/opensans_light"
+                            android:text="@string/consejos"
+                            android:textAlignment="center"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtSubTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="center"
+                android:text="@string/p_ginas_interesantes"
+                android:textColor="#33C61B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="12dp"/>
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:columnCount="2"
+                android:rowCount="3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_pag1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="8dp">
+
+                    <ImageButton
+                        android:id="@+id/ib_pag1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:background="@drawable/fondo"                     android:contentDescription="@string/p_gina1"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/educaplay"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/txt_ib_pag1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="155sp"
+                        android:layout_marginBottom="25sp"
+                        android:gravity="center"
+                        android:text="@string/educaplay_la_deforestaci_n"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_pag2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="8dp"
+                    tools:ignore="TextSizeCheck">
+
+                    <ImageButton
+                        android:id="@+id/ib_pag2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/fondo"
+                        android:contentDescription="@string/p_gina2"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/colverde"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/txt_ib_pag2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="155sp"
+                        android:layout_marginBottom="5sp"
+                        android:gravity="center"
+                        android:text="@string/colombia_verde_deforestaci_n_y_cambio_clim_tico" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_pag3"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="8dp"
+                    tools:ignore="TextSizeCheck">
+                    <ImageButton
+                        android:id="@+id/ib_pag3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/fondo"
+                        android:contentDescription="@string/p_gina3"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/somoscambio"
+                        tools:ignore="ImageContrastCheck" />
+                    <TextView
+                        android:id="@+id/txt_ib_pag3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="155sp"
+                        android:layout_marginBottom="5sp"
+                        android:gravity="center"
+                        android:text="@string/somos_el_cambio_efectos_del_cambio_clim_tico_en_colombia_un_desaf_o_urgente" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_pag4"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="8dp"
+                    tools:ignore="TextSizeCheck">
+
+                    <ImageButton
+                        android:id="@+id/ib_pag4"
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/fondo"
+                        android:contentDescription="@string/p_gina4"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/minambiente"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/txt_ib_pag4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="155sp"
+                        android:layout_marginBottom="37sp"
+                        android:gravity="center"
+                        android:text="@string/minambiente_control_a_la_deforestaci_n" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_pag5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="8dp"
+                    tools:ignore="TextSizeCheck">
+                    <ImageButton
+                        android:id="@+id/ib_pag5"
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/fondo"
+                        android:contentDescription="@string/p_gina5"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/minambiente"
+                        tools:ignore="ImageContrastCheck" />
+                    <TextView
+                        android:id="@+id/txt_ib_pag5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="155sp"
+                        android:layout_marginBottom="5sp"
+                        android:gravity="center"
+                        android:text="@string/minambiente_se_reduce_y_se_contiene_la_deforestaci_n_en_colombia_durante_los_ltimos_cuatro_a_os" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view_pag6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    app:cardCornerRadius="8dp"
+                    tools:ignore="TextSizeCheck">
+                    <ImageButton
+                        android:id="@+id/ib_pag6"
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/fondo"
+                        android:contentDescription="@string/p_gina6"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/onu" />
+                    <TextView
+                        android:id="@+id/txt_ib_pag6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="155sp"
+                        android:layout_marginBottom="5sp"
+                        android:gravity="center"
+                        android:text="@string/naciones_unidas_reforestaci_n_la_manera_m_s_f_cil_de_luchar_contra_el_cambio_clim_tico" />
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+            <!--Fin de las cardsRecursos-->
+
+            <!--Comienzo de mapa de reforestacion-->
+            <TextView
+                android:id="@+id/txtMapa"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="center"
+                android:text="@string/mapa_de_deforestaci_n"
+                android:textColor="#18AE00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombreAPP"
+                tools:ignore="TextContrastCheck"
+                tools:layout_editor_absoluteX="0dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <WebView
+                    android:id="@+id/VistaWEB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </FrameLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
